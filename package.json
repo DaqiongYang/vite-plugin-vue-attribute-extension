@@ -1,0 +1,31 @@
+{
+  "name": "vite-plugin-vue-attribute-extension",
+  "version": "0.0.3",
+  "description": "Template and Script Label Attribute Extension for Vue3",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "rimraf dist && run-s build-bundle",
+    "build-bundle": "esbuild src/index.ts --bundle --platform=node --target=node16 --external:@vue/compiler-sfc --external:vue/compiler-sfc --external:vite --outfile=dist/index.js"
+  },
+  "keywords": ["vue3 setup", "vue3 setup extension", "vue3 layout", "vue3 attribute", "vue3 extension", "vue3 attribute extension"],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "author": {
+    "name": "yangdaqiong",
+    "email": "yangdaqiong@126.com"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.3.1",
+    "esbuild": "^0.18.4",
+    "magic-string": "^0.30.0",
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^5.0.1",
+    "@vue/compiler-sfc": "^3.3.4",
+    "vite": "^4.3.9"
+  },
+  "dependencies": {
+   
+  }
+}
